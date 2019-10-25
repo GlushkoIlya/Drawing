@@ -1,4 +1,8 @@
-import turtle as tl
+from turtle import *
 
-def rect():
+def rect(a, b):
     pass
+
+def tringle(a, b, c):
+    pass
+
