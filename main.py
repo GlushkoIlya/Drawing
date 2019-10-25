@@ -1,6 +1,4 @@
-pass
-#test
-#kПлатон л
+import turtle as tl
 
-
-#Платон ЛОХ
+def rect():
+    pass
