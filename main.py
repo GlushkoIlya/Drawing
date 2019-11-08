@@ -60,7 +60,7 @@ def sneg(m, n, r):
     t.right(90)
     t.fd(2 * r)
     t.right(90)
-    t.fd(r)
+    t.fd(3 * r)
     t.up()
     t.goto(m + r, n + 4 * r)
     t.down()
