@@ -1,5 +1,6 @@
 import turtle as t
 def house(m, n, x):
+    # TODO: Ilya
     t.up()
     t.goto(m, n)
     t.fd(2 * x)
@@ -48,6 +49,7 @@ def house(m, n, x):
     t.fd(2 * y)
 
 def sneg(m, n, r):
+    # TODO: Ilya
     t.up()
     t.goto(m, n)
     t.fd(r)
@@ -69,6 +71,7 @@ def sneg(m, n, r):
     t.circle(r * 2)
 
 def dog(m, n, x):
+    # TODO: Platon
     t.up()
     t.goto(m, n)
     t.fd(4 * x)
@@ -103,6 +106,7 @@ def dog(m, n, x):
     t.fd(x)
 
 def machine(m, n, x):
+    # TODO: Platon
     t.up()
     t.goto(m, n)
     t.fd(4 * x)
