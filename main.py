@@ -49,6 +49,7 @@ def house(m, n, x):
     t.fd(y)
     t.right(180)
     t.fd(2 * y)
+    t.left(90)
 
 
 def el(m, n, x):
@@ -75,6 +76,7 @@ def el(m, n, x):
     t.fd(x/8)
     t.right(90)
     t.fd(x / 4)
+    t.right(90)
 
 
 def dog(m, n, x):
@@ -303,8 +305,14 @@ def sqare_8(k, l, z, c):
     t.left(90)
 
 
-machine(100, 100, 100)
-sqare(100, -700, 200)
+t.speed(100)
+house(-800, 350, 50)
+el(-725, 100, 50)
+machine(-550, 250, 30)
+dog(-650, 100, 30)
+
+# machine(100, 100, 100)
+# sqare(100, -700, 200)
 # sqare_1(50, -700, 200)
 # sqare_2(100, -500, 200)
 # sqare_3(50, -500, 200)
@@ -314,3 +322,5 @@ sqare(100, -700, 200)
 # sqare_7(100, -500, 200)
 # sqare_7(100, -500, -200)
 # sqare_8(-550, -300, 100, 70)
+
+t.mainloop()
