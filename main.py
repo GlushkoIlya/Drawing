@@ -190,6 +190,42 @@ def snk(m, n, y, x):
     t.fd(x//5)
 
 
+def snk_1(m,n,y,x):
+    #TODO: Nadia
+    t.up()
+    t.goto(m,n)
+    t.down()
+    t.fd(2 * y)
+    t.left(90)
+    t.fd(y)
+    t.left(90)
+    t.fd(3 * y)
+    t.left(90)
+    t.fd(4 * y)
+    t.right(90)
+    t.fd(6 * y)
+    t.right(90)
+    t.fd(5 * x)
+    t.right(90)
+    t.fd(3 * x)
+    t.right(90)
+    t.fd(3 * x)
+    t.left(120)
+    t.fd(2 * x)
+    t.left(60)
+    t.fd(2 * y)
+    t.left(90)
+    t.fd(7 * x)
+    t.left(90)
+    t.fd(9 * x)
+    t.left(90)
+    t.fd(16 * x)
+    t.fd(x//5)
+    t.left(90)
+    t.fd(8 * x   
+    
+    
+
 t.speed(100)
 house(-800, 350, 50)
 el(-725, 100, 50)
@@ -198,4 +234,5 @@ dog(-650, 100, 30)
 
 # machine(100, 100, 100)
 # snk(100, 100, 50, 25)
+# snk_1(100, 100, 50, 25)  
 t.mainloop()
