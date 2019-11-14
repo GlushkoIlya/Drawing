@@ -48,28 +48,30 @@ def house(m, n, x):
     t.right(180)
     t.fd(2 * y)
 
-def sneg(m, n, r):
-    # TODO: Ilya
+def el(m, n, x):
     t.up()
-    t.goto(m, n)
-    t.fd(r)
-    t.down()
-    t.fd(2 * r)
-    t.right(90)
-    t.fd(3 * r)
-    t.right(90)
-    t.fd(2 * r)
-    t.right(90)
-    t.fd(r)
-    t.up()
-    t.goto(m + r, n + 4 * r)
-    t.down()
-    t.circle(r)
-    t.up()
-    t.goto(m + r, n + 7 * r)
-    t.down()
-    t.circle(r * 2)
-
+	t.goto(m, n)
+	t.fd(x / 2)
+	t.down()
+	for i in range(3):
+		t.right(120)
+		t.fd(x)
+		t.left(120)
+		t.fd(x)
+		t.left(120)
+		t.fd(x)
+		t.left(120)
+		t.fd(x)
+		t.left(120)
+		t.fd(x/2)
+		x += x / 2
+	t.fd(x/16)
+	t.right(90)
+	t.fd(x / 4)
+	t.right(90)
+	t.fd(x/8)
+	t.right(90)
+	t.fd(x / 4)
 def dog(m, n, x):
     # TODO: Platon
     t.up()
