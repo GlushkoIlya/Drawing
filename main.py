@@ -155,154 +155,39 @@ def machine(m, n, x):
     t.fd(x)
 
 
-def sqare(x, m, n):
-    # TODO(Nadia)
-    t.up()  # левый глаз
+def snk(m, n, y, x):
+    # TODO: Nadia
+    t.up()
     t.goto(m, n)
     t.down()
-    t.fd(x)
+    t.fd(2 * y)
     t.left(90)
-    t.fd(x)
+    t.fd(y)
     t.left(90)
-    t.fd(x)
+    t.fd(3 * y)
     t.left(90)
-    t.fd(x)
+    t.fd(4 * y)
+    t.right(90)
+    t.fd(4 * y)
     t.left(90)
-
-
-def sqare_1(g, m, n):
-    # TODO(Nadia)
-    t.up()     # левый зрачек
-    t.goto(m, n)
-    t.down()
-    t.fd(g)
+    t.fd(3 * y)
     t.left(90)
-    t.fd(g)
+    t.fd(7 * y)
     t.left(90)
-    t.fd(g)
+    t.fd(7 * x)
+    t.right(220)
+    t.fd(3 * x)
+    t.left(40)
+    t.fd(3 * x)
+    t.right(90)
+    t.fd(10 * x)
+    t.right(90)
+    t.fd(2 * x)
+    t.right(90)
+    t.fd(8 * x)
     t.left(90)
-    t.fd(g)
-    t.left(90)
-
-
-def sqare_2(x, m, n):
-    # TODO(Nadia)
-    t.up()     # правый глаз
-    t.goto(m, n)
-    t.down()
-    t.fd(x)
-    t.left(90)
-    t.fd(x)
-    t.left(90)
-    t.fd(x)
-    t.left(90)
-    t.fd(x)
-    t.left(90)
-
-
-def sqare_3(g, m, n):
-    # TODO(Nadia)
-    t.up()     # правый зрачек
-    t.goto(m, n)
-    t.down()
-    t.fd(g)
-    t.left(90)
-    t.fd(g)
-    t.left(90)
-    t.fd(g)
-    t.left(90)
-    t.fd(g)
-    t.left(90)
-
-
-def sqare_4(m, n, z, c):
-    # TODO(Nadia)
-    t.up()  # рот
-    t.goto(m, n)
-    t.down()
-    t.fd(z)
-    t.left(90)
-    t.fd(c)
-    t.left(90)
-    t.fd(z)
-    t.left(90)
-    t.fd(c)
-    t.left(90)
-
-
-def sqare_5(u, e, w):
-    # TODO(Nadia)
-    t.up()  # левый глаз
-    t.goto(e, w)
-    t.down()
-    t.fd(u)
-    t.left(90)
-    t.fd(u)
-    t.left(90)
-    t.fd(u)
-    t.left(90)
-    t.fd(u)
-    t.left(90)
-
-
-def sqare_6(u, d, f):
-    # TODO(Nadia)
-    t.up()     # левый зрачек
-    t.goto(d, f)
-    t.down()
-    t.fd(u)
-    t.left(90)
-    t.fd(u)
-    t.left(90)
-    t.fd(u)
-    t.left(90)
-    t.fd(u)
-    t.left(90)
-
-
-def sqare_7(u, a, s):
-    # TODO(Nadia)
-    t.up()     # правый глаз
-    t.goto(a, s)
-    t.down()
-    t.fd(u)
-    t.left(90)
-    t.fd(u)
-    t.left(90)
-    t.fd(u)
-    t.left(90)
-    t.fd(u)
-    t.left(90)
-
-
-def sqare_7(u, h, j):
-    # TODO(Nadia)
-    t.up()     # правый зрачек
-    t.goto(h, j)
-    t.down()
-    t.fd(u)
-    t.left(90)
-    t.fd(u)
-    t.left(90)
-    t.fd(u)
-    t.left(90)
-    t.fd(u)
-    t.left(90)
-
-
-def sqare_8(k, l, z, c):
-    # TODO(Nadia)
-    t.up()  # рот
-    t.goto(k, l)
-    t.down()
-    t.fd(z)
-    t.left(90)
-    t.fd(c)
-    t.left(90)
-    t.fd(z)
-    t.left(90)
-    t.fd(c)
-    t.left(90)
+    t.fd(x * 8)
+    t.fd(x//5)
 
 
 t.speed(100)
@@ -312,15 +197,5 @@ machine(-550, 250, 30)
 dog(-650, 100, 30)
 
 # machine(100, 100, 100)
-# sqare(100, -700, 200)
-# sqare_1(50, -700, 200)
-# sqare_2(100, -500, 200)
-# sqare_3(50, -500, 200)
-# sqare_4(-650, 100, 100, 70)
-# sqare_5(100, 100, -700)
-# sqare_6(100, -200, 50)
-# sqare_7(100, -500, 200)
-# sqare_7(100, -500, -200)
-# sqare_8(-550, -300, 100, 70)
-
+# snk(100, 100, 50, 25)
 t.mainloop()
