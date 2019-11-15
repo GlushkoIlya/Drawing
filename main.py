@@ -67,13 +67,13 @@ def el(m, n, x):
         t.left(120)
         t.fd(x)
         t.left(120)
-        t.fd(x/2)
+        t.fd(x / 2)
         x += x / 2
-    t.fd(x/16)
+    t.fd(x / 16)
     t.right(90)
     t.fd(x / 4)
     t.right(90)
-    t.fd(x/8)
+    t.fd(x / 8)
     t.right(90)
     t.fd(x / 4)
     t.right(90)
@@ -159,6 +159,7 @@ def snk(m, n, y, x):
     # TODO: Nadia
     t.up()
     t.goto(m, n)
+    t.left(180)
     t.down()
     t.fd(2 * y)
     t.left(90)
@@ -187,13 +188,14 @@ def snk(m, n, y, x):
     t.fd(8 * x)
     t.left(90)
     t.fd(x * 8)
-    t.fd(x//5)
+    t.fd(x // 5)
 
 
-def snk_1(m,n,y,x):
-    #TODO: Nadia
+def snk_1(m, n, y, x):
+    # TODO: Nadia
     t.up()
-    t.goto(m,n)
+    t.goto(m, n)
+    t.right(90)
     t.down()
     t.fd(2 * y)
     t.left(90)
@@ -220,19 +222,19 @@ def snk_1(m,n,y,x):
     t.fd(9 * x)
     t.left(90)
     t.fd(16 * x)
-    t.fd(x//5)
+    t.fd(x // 5)
     t.left(90)
-    t.fd(8 * x   
-    
-    
+    t.fd(8 * x)
+
 
 t.speed(100)
 house(-800, 350, 50)
 el(-725, 100, 50)
 machine(-550, 250, 30)
 dog(-650, 100, 30)
+snk(-100, 300, 30, 15)
+snk_1(-100, -100, 30, 15)
 
 # machine(100, 100, 100)
-# snk(100, 100, 50, 25)
-# snk_1(100, 100, 50, 25)  
+
 t.mainloop()
