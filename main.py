@@ -50,6 +50,33 @@ def house(m, n, x):
     t.right(180)
     t.fd(2 * y)
     t.left(90)
+ 
+
+def rect(x1, x2, y1, y2, cl):
+    t.color(cl)
+    t.up()
+    t.goto(x1, y1)
+    t.down()
+    t.begin_fill()
+    t.goto(x1, y2)
+    t.goto(x2, y2)
+    t.goto(x2, y1)
+    t.goto(x1, y1)
+    t.end_fill()
+    t.color('black')
+
+
+def triangle(x1, x2, x3, y1, y2, y3, cl):
+    t.color(cl)
+    t.up()
+    t.goto(x1, y1)
+    t.down()
+    t.begin_fill()
+    t.goto(x2, y2)
+    t.goto(x3, y3)
+    t.goto(x1, y1)
+    t.end_fill()
+    t.color('black')
 
 
 def el(m, n, x):
