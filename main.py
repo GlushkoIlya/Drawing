@@ -52,7 +52,7 @@ def house(m, n, x):
     t.left(90)
  
 
-def rect(x1, x2, y1, y2, cl):
+def rect(x1, y1, x2, y2, cl):
     t.color(cl)
     t.up()
     t.goto(x1, y1)
@@ -66,7 +66,7 @@ def rect(x1, x2, y1, y2, cl):
     t.color('black')
 
 
-def triangle(x1, x2, x3, y1, y2, y3, cl):
+def triangle(x1, y1, x2, y2, x3, y3, cl):
     t.color(cl)
     t.up()
     t.goto(x1, y1)
