@@ -1,6 +1,9 @@
 import turtle as t
 
 
+t.colormode(255)
+
+
 def house(m, n, x):
     # TODO: Ilya
     t.up()
@@ -52,7 +55,11 @@ def house(m, n, x):
     t.left(90)
  
 
-def rect(x1, y1, x2, y2, cl):
+def rect(a1, a2, cl='black'):
+    x1 = a1[0]
+    y1 = a1[1]
+    x2 = a2[0]
+    y2 = a2[1]
     t.color(cl)
     t.up()
     t.goto(x1, y1)
@@ -66,7 +73,13 @@ def rect(x1, y1, x2, y2, cl):
     t.color('black')
 
 
-def triangle(x1, y1, x2, y2, x3, y3, cl):
+def triangle(a1, a2, a3, cl='black'):
+    x1 = a1[0]
+    y1 = a1[1]
+    x2 = a2[0]
+    y2 = a2[1]
+    x3 = a3[0]
+    y3 = a3[1]
     t.color(cl)
     t.up()
     t.goto(x1, y1)
@@ -77,6 +90,90 @@ def triangle(x1, y1, x2, y2, x3, y3, cl):
     t.goto(x1, y1)
     t.end_fill()
     t.color('black')
+
+
+def qr(a1, a2, a3, a4, cl='black'):
+    x1 = a1[0]
+    y1 = a1[1]
+    x2 = a2[0]
+    y2 = a2[1]
+    x3 = a3[0]
+    y3 = a3[1]
+    x4 = a4[0]
+    y4 = a4[1]
+    t.color(cl)
+    t.up()
+    t.goto(x1, y1)
+    t.down()
+    t.begin_fill()
+    t.goto(x2, y2)
+    t.goto(x3, y3)
+    t.goto(x4, y4)
+    t.goto(x1, y1)
+    t.end_fill()
+    t.color('black')
+
+
+def rocket(x, y, m):
+    t1 = [x, y]
+    t2 = [x - m, y - m]
+    t3 = [x + m, y - m]
+    t4 = [x - m, y - 3 * m]
+    t5 = [x + m, y - 3 * m]
+    t6 = [x - m // 2, y - 4 * m]
+    t7 = [x + m // 2, y - 4 * m]
+    t8 = [x - 1.5 * m, y - 4 * m]
+    t9 = [x + 1.5 * m, y - 4 * m]
+    t10 = [x - 1.5 * m, y - 5 * m]
+    t11 = [x + 1.5 * m, y - 5 * m]
+    t12 = [x - m // 2, y - 4.5 * m]
+    t13 = [x + m // 2, y - 4.5 * m]
+    t14 = [x + m // 2, y - m]
+    t15 = [x - m // 2, y - 3 * m]
+    t16 = [x + m // 2, y - 3 * m]
+    triangle(t1, t2, t14, 'red')
+    triangle(t1, t3, t14, 'blue')
+    triangle(t2, t3, t4, 'yellow')
+    triangle(t3, t5, t4, 'orange')
+    triangle(t15, t16, t7, 'green')
+    triangle(t15, t6, t7, 'blue')
+    triangle(t15, t8, t10, 'pink')
+    triangle(t15, t10, t12, 'purple')
+    triangle(t16, t9, t7, 'grey')
+    qr(t7, t9, t11, t13)
+
+
+def tree(x, y, m):
+    t1 = [x, y]
+    t2 = [x - m, y - m]
+    t3 = [x, y - m]
+    t4 = [x + m // 2, y - m]
+    t5 = [x + m, y - m]
+    t6 = [x - 1.5 * m, y - 2.5 * m]
+    t7 = [x - m // 2, y - 2.5 * m]
+    t8 = [x, y - 2.5 * m]
+    t9 = [x + 1.5 * m, y - 2.5 * m]
+    t10 = [x - m, y - 3.5 * m]
+    t11 = [x + m // 2, y - 3.5 * m]
+    t12 = [x + m, y - 3.5 * m]
+    t13 = [x - 2 * m, y - 4.5 * m]
+    t14 = [x - m // 2, y - 4.5 * m]
+    t15 = [x, y - 4.5 * m]
+    t16 = [x + m // 2, y - 4.5 * m]
+    t17 = [x + m, y - 4.5 * m]
+    t18 = [x + 2 * m, y - 4.5 * m]
+    t19 = [x - m // 2, y - 6 * m]
+    t20 = [x + m // 2, y - 6 * m]
+    cl = [(100, 255, 50), (50, 200, 100), (10, 150, 50), (30, 60, 10),
+          (70, 230, 70), (100, 255, 200), (10, 50, 10), (150, 75, 0)]
+    triangle(t1, t2, t4, cl[0])
+    triangle(t1, t4, t5, cl[1])
+    triangle(t3, t6, t7, cl[2])
+    triangle(t3, t7, t9, cl[3])
+    triangle(t8, t13, t17, cl[4])
+    triangle(t8, t18, t17, cl[5])
+    qr(t13, t10, t12, t15, cl[6])
+    rect(t14, t20, cl[7])
 
 
 def el(m, n, x):
