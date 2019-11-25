@@ -384,7 +384,6 @@ def zaicc(m, n, x):
     t.end_fill()
 
 
-   
 zaicc(450, 400, 40)
 liss(450, -100, 30)
 t.speed(100)
