@@ -384,16 +384,16 @@ def zaicc(m, n, x):
     t.end_fill()
 
 
+t.speed(100)
+
 zaicc(450, 400, 40)
 liss(450, -100, 30)
-t.speed(100)
 house(-800, 350, 50)
 el(-725, 100, 50)
 machine(-550, 250, 30)
 dog(-650, 100, 30)
-
-
+tree(0, 0, 75)
+rocket(200, 500, 75)
 # machine(100, 100, 100)
 
 t.mainloop()
-
