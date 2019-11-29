@@ -383,17 +383,34 @@ def zaicc(m, n, x):
     t.goto(m + 7 * x, n - 6 * x)
     t.end_fill()
 
+def car(x, y, m):
+    t1 = [x, y]
+    t2 = [x + 0,5 * m, y - m]
+    t3 = [x - 2.5 * m, y]
+    t4 = [x - 3 * m, y - m]
+    t5 = [x - 2 * m, y - m]
+    t6 = [x + m, y -m]
+    t7 = [x - 3.5 * m, y - m]
+    t8 = [x - 4.5 * m, y - 2 * m]
+    t9 = [x - 2.5 * m, y - 2 * m]
+    t10 = [x + 2 * m, y - 2 * m]
+    qr(t2, t5, t3, t1, 'blue')
+    triangle(t3, t4, t5, 'dark blue')
+    triangle(t7, t8, t9, 'dark red')
 
-t.speed(100)
+    qr(t7, t9, t10, t6, 'red')
+car(-600, 0, 70)
 
 zaicc(450, 400, 40)
 liss(450, -100, 30)
+t.speed(100)
 house(-800, 350, 50)
 el(-725, 100, 50)
 machine(-550, 250, 30)
 dog(-650, 100, 30)
-tree(0, 0, 75)
-rocket(200, 500, 75)
+
+
 # machine(100, 100, 100)
 
 t.mainloop()
+
