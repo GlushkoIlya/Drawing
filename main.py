@@ -399,15 +399,20 @@ def car(x, y, m):
     triangle(t7, t8, t9, 'dark red')
 
     qr(t7, t9, t10, t6, 'red')
+
+    
+
+t.speed(100)
 car(-600, 0, 70)
 
 zaicc(450, 400, 40)
 liss(450, -100, 30)
-t.speed(100)
 house(-800, 350, 50)
 el(-725, 100, 50)
 machine(-550, 250, 30)
 dog(-650, 100, 30)
+tree(0, 0, 50)
+rocket(100, 500, 50)
 
 
 # machine(100, 100, 100)
