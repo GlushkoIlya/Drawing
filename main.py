@@ -1,6 +1,5 @@
 import turtle as t
 
-
 t.colormode(255)
 
 
@@ -299,7 +298,7 @@ def liss(m, n, x):
     t.color("#FF6633")  # правое ухо
     t.goto(m, n - 4 * x)
     t.goto(m + 2 * x, n - 2 * x)
-    t.goto(m+4*x, n-4*x)
+    t.goto(m + 4 * x, n - 4 * x)
     t.end_fill()
     t.begin_fill()
     t.color("#FF9900")  # голова
@@ -401,18 +400,18 @@ def car(x, y, m):
 
     qr(t7, t9, t10, t6, 'red')
 
+
 t.speed(100)
-car(-600, 0, 70)
+car(-350, 0, 20)
 
-zaicc(450, 400, 40)
-liss(450, -100, 30)
-house(-800, 350, 50)
-el(-725, 100, 50)
-machine(-550, 250, 30)
-dog(-650, 100, 30)
-tree(0, 0, 50)
-rocket(100, 500, 50)
-
+zaicc(250, 300, 20)
+liss(250, -50, 20)
+# house(-800, 350, 50)
+# el(-725, 100, 50)
+# machine(-550, 250, 30)
+# dog(-650, 100, 30)
+tree(-50, -50, 30)
+rocket(-50, 300, 30)
 
 # machine(100, 100, 100)
 
