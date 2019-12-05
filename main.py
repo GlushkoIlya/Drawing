@@ -53,7 +53,7 @@ def house(m, n, x):
     t.right(180)
     t.fd(2 * y)
     t.left(90)
- 
+
 
 def rect(a1, a2, cl='black'):
     x1 = a1[0]
@@ -383,13 +383,14 @@ def zaicc(m, n, x):
     t.goto(m + 7 * x, n - 6 * x)
     t.end_fill()
 
+
 def car(x, y, m):
     t1 = [x, y]
-    t2 = [x + 0,5 * m, y - m]
+    t2 = [x + 0.5 * m, y - m]
     t3 = [x - 2.5 * m, y]
     t4 = [x - 3 * m, y - m]
     t5 = [x - 2 * m, y - m]
-    t6 = [x + m, y -m]
+    t6 = [x + m, y - m]
     t7 = [x - 3.5 * m, y - m]
     t8 = [x - 4.5 * m, y - 2 * m]
     t9 = [x - 2.5 * m, y - 2 * m]
@@ -399,8 +400,6 @@ def car(x, y, m):
     triangle(t7, t8, t9, 'dark red')
 
     qr(t7, t9, t10, t6, 'red')
-
-    
 
 t.speed(100)
 car(-600, 0, 70)
@@ -418,4 +417,3 @@ rocket(100, 500, 50)
 # machine(100, 100, 100)
 
 t.mainloop()
-
